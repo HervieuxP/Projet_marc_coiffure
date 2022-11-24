@@ -1,0 +1,38 @@
+#navbar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.8em;
+    display:flex;
+    justify-content: flex-end; 
+    margin-right: 25vh; 
+}
+ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin:10px;
+    float: left;
+    
+  }
+  
+  a {
+    display:block;
+    padding:10px;
+    text-decoration: none;
+    background: linear-gradient(to top, #A81FD1 0%, #A81FD1 10%, transparent 10.01%) no-repeat left bottom / 0  ;
+    transition: background-size .5s;
+  }
+  
+  a:hover {
+    background-size: 100% 10%;
+  } 
+  #divlogo{
+    display:flex;
+  }
+  #logo{
+    width:50px;
+    height: 50px;
+    background-color: #A81FD1;
+  }
