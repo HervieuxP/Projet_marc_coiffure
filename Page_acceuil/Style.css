@@ -2,6 +2,9 @@
     padding:0px;
     margin:0px;
 }
+body{
+  width:100%;
+}
 
 #navbar{
     font-family: Arial, Helvetica, sans-serif;
@@ -12,19 +15,17 @@
     margin-top: 2vh;
 }
 ul{   
-    
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
   li {
     margin:5vh 1vw 0 0vh;
-    
     float: left;
-    
   }
   /* ajout de la barre hover*/
-  a{
+  .nav{
+    color:#A81FD1;
     display:flex;
     padding:10px;
     text-decoration: none;
@@ -32,34 +33,125 @@ ul{
     transition: background-size .5s;
   }
   
-  a:hover {
+  .nav:hover {
     background-size: 100% 10%;
-  } 
+    color:#A81FD1;
+  }
+  .nav:active{
+    color:#03224c;
+  }
   #logo{
     margin-left: 1vw;
     width:200px;
     height: 200px;
   }
+  .slogan{
+    text-align: center;
+    padding: 12.5em 5em;
+  }
+  .accueil{
+    background-image: url('img/Cliente.png');
+    width:100%;
+    height: 70vh;
+    position: relative;
+    opacity: .7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* fixed = Parallax 
+       scroll = Normale 
+    */
+     background-attachment: fixed;
+    object-fit: cover;
+} 
+.apropos{
+    position: relative;
+    margin-bottom: 6vh;
+    width: 100%;
+    height: 25em;
+    text-align: center;
+    color: #000;
+    font-size: 1em;
+    letter-spacing: .1em;
+    background-color: #03224C;
+    color: #fff;
+    padding-bottom: 6vh;
+}
+#desc{
+  
+}
+#titre{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:#03224C;
+  font-size: 8vh;
+}
+#image{
+  display:flex;
+  justify-content: space-between;
+  gap:5vw;
+}
+
+.img{
+  display:inline-block;
+  height:700px;
+  width:700px;
+  margin:6vh 0 6vh 0;
+}
+#imgg{
+  margin-left: 8vh;
+  padding:0;
+}
+#imgd{
+  padding:0;
+  margin-right:10vh;
+}
+#grille{
+  margin-top:6vh;
+  margin-bottom:6vh;
+}
+
+.papaseparer{
+  width:auto;
+  height:auto;
+  display: flex;
+  align-self: center;
+  justify-content: center; 
+align-content:center; 
+}
+.separer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:80%;
+  height:2px;
+  background-color:#A81FD1;
+}
   /* css footer */
   #footer{
+    margin:0;
+    margin-top:6vh;
     display:flex;
     justify-content: space-between;
     align-items: center;
     bottom:0;
-    width:100vw;
+    width: 100%;
     height:500px;
     background-color: #001430;
     color:white;
 }
 #contact{ 
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 15px;
+    display:inline-block;
     height:300px;
     width:300px;
     background-color: #03224C;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    text-align: center;
 }
 #mention{
+    border-radius: 15px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +162,8 @@ ul{
 }
 
 
-#map{
+#map iframe{
+    border-radius: 15px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -79,4 +172,7 @@ ul{
     height:300px;
     width:300px;
     background-color: #03224C;
+}
+h3{
+  padding:5px;
 }

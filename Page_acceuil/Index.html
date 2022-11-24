@@ -4,26 +4,103 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Marc'Coiffure</title>
-   
+  </head>
   <body>
-    
+     <!-- CSS grille + photo-->
+     <style>
+      #color{
+        margin:6vh 0 6vh 0;
+        background-color: #03224C;
+        height: 830px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        align-content:center; 
+        min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+      /*min-height: 100vh; */
+      color: white;
+      }
+      .card-group{
+          padding: 1vh;
+      }
+  </style>
+
     <nav id="navbar">
       <img src="marc_logo.png" id="logo">
         <div>
           <ul>
-            <li><a href="#" class="li">Accueil</a></li>
-            <li><a href="#" class="li">A propos</a></li>
-            <li><a href="#" class="li">Tarif</a></li>
-            <li><a href="#" class="li">Contact</a></li>
+            <li><a class="nav" href="#" class="li">Accueil</a></li>
+            <li><a class="nav" href="#" class="li">A propos</a></li>
+            <li><a class="nav" href="#" class="li">Tarif</a></li>
+            <li><a class="nav" href="#" class="li">Contact</a></li>
           </ul>
         </div>
     </nav>
-    <div id="test"></div>
+     <!-- Section Acceuil -->
+     <section class="accueil">
+      <div class="slogan">
+        <h1 id="titre">Marc'COIFFURE</h1>
+      </div>
+    </section>
+   <!-- Section A Propos -->
+   <section class="apropos">
+    <div class="article">
+      <h2>A Propos</h2>
+      <p id="desc">L’histoire « Marc’ COIFFURE » commence avec Marc. Coiffeur comme son père et son grand-père avant lui, il hérite de plusieurs décennies de connaissances dans ce domaine.
+
+      Il acquiert au fil des ans un savoir-faire unique qui lui permet de perfectionner ses savoirs faire. Fort de son expérience, il crée en 2012 le salon « Marc’ COIFFURE » qui se destine aussi bien aux hommes qu’aux femmes.
+
+      L’aventure se poursuit depuis. Sa mission ? Proposer des coupes d’exception, adaptés à tous les types de cheveux et accessibles à tous !</p>
+    </div>
+</section>
+<div class="papaseparer"><div class="separer"></div></div>
+
+ <!-- Grille tarif-->
+<div class="card-group" style : height: "830px";>
+  <div class="card" id="color" >
+      <h1>Tarifs</h1>
+      <p>Coupe Femme | 38€</p>
+      <p>Coupe Homme | 26€</p>
+      <p>Coupe Enfant | 20€</p>
+      <p>Coupe Adolescent | 23€</p>
+      <p>Coiffure Haute | 60€</p>
+      <p>Coupe et mise en plis | 50€</p>
+      <p>Mise en plis | 30€</p>
+      <p>Teinture | 52€</p>
+      <p>Mèches demi-tête | 80€</p>
+      <p>Mèches tête complète : 120€</p>
+      <p>Permanente : 90€</p>
+      <p>Enzymothérapie : 450€</p>
+      <p>Traitement capillaire : 35€</p>
+      <p>Traitement du cuir chevelu : 100€</p>
+  </div>
+  
+  </div>
+</div>
+    <div class="papaseparer"><div class="separer"></div></div>
+    <!-- card photo salon-->
+      <div id="image">
+          <img src="img/Salon2.png"  class="img" id="imgg" alt="...">
+          <img src="img/Salon.png" class="img" id="imgd"alt="...">
+      </div>
+    <div class="papaseparer"><div class="separer"></div></div>
     <section id="footer">
       <div id="mention"> mention</div>
-      <div id="contact">contact</div>
-      <div id="map">map</div>
+      <div id="contact"><h3>contact</h3>
+        <p> Marc Coiffffure</p>
+        <p> Place Marnac</p>
+        <p> 31520 Ramonville-St-Agne</p>
+        <p> 0542581584</p>
+        <p>marc.coiffffure@gmail.com</p>
+      </div>
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.8555321017066!2d1.4754756154942898!3d43.547053279125045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebe815737b837%3A0x1ca93c231fb90dac!2sPl.%20Marnac%2C%2031520%20Ramonville-Saint-Agne!5e0!3m2!1sfr!2sfr!4v1669304574395!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
   </body>
 </html>
