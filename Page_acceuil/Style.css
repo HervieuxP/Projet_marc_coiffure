@@ -2,9 +2,16 @@
     padding:0px;
     margin:0px;
 }
+@font-face{
+  font-family: "LibreBaskerville";
+  src: url("font/LibreBaskerville-Regular.ttf") format("truetype");
+  font-family: "MrsEaves";
+  src: url("font/MRSEAV~9.TTF") format("truetype");
+}
 body{
   width:100%;
 }
+
 
 #navbar{
     font-family: Arial, Helvetica, sans-serif;
@@ -78,10 +85,14 @@ ul{
     padding-bottom: 6vh;
 }
 #desc{
+  font-family:"MrsEaves";
+  padding: 15px;
+  margin:15px;
+  font-size: large;
   
 }
 #titre{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:"LibreBaskerville";
   color:#03224C;
   font-size: 8vh;
 }
@@ -108,6 +119,9 @@ ul{
 #grille{
   margin-top:6vh;
   margin-bottom:6vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .papaseparer{
@@ -175,4 +189,21 @@ align-content:center;
 }
 h3{
   padding:5px;
+}
+
+h2{
+ font-family:"LibreBaskerville";
+}
+
+@media screen and (max-width: 600px) {
+      
+  body{
+  }
+  
+  #navbar{
+        display:inline-block;
+        justify-content: center;
+        align-items: center;
+      }
+  
 }
